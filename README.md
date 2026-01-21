@@ -88,7 +88,7 @@ PTERO_APP_KEY=xz
 ```
 ## 4. Database
 ``` bash
-mysql
+mysql -u root -p
 CREATE DATABASE billing CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE USER 'billing'@'localhost' IDENTIFIED BY 'StrongPassHere';
 GRANT ALL PRIVILEGES ON billing.* TO 'billing'@'localhost';
